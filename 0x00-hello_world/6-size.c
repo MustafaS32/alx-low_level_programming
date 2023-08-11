@@ -3,7 +3,7 @@
 /**
  * main - Entry point
  *
- * description: c program using sizeof fonction to print different kinds of data
+ * description: cprogram using sizeof fonction to print different kinds of data
  *
  * Return: Always 0 (Success)
 */
