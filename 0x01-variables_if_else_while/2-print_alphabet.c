@@ -1,7 +1,7 @@
 #include<stdio.h>
 
 /**
- * maib - Entry point
+ * main - Entry point
  *
  * description: alphabet in lowercase
  *
