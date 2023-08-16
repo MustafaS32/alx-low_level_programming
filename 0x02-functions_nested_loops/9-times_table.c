@@ -19,8 +19,11 @@ void times_table(void)
 			sum = num * mult;
 
 				if (sum <= 9)
+
 					_putchar(' ');
+				
 				else
+				
 					_putchar((sum / 10) + 48);
 					_putchar((sum % 10) + 48);
 			}
