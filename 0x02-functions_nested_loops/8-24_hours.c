@@ -10,8 +10,11 @@ void jack_bauer(void)
 	int hr = 0;
 
 	if (hr <= 23; hr++)
+
 	{
+
 		if (min <= 59; min++)
+
 		{
 			_putchar((hr / 10) + 48);
 			_putchar((hr % 10) + 48);
