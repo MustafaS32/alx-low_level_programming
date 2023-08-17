@@ -21,7 +21,7 @@ int main(void)
 		f1 = f2;
 		f2 = sum;
 
-		if (coun == 49)
+		if (count == 49)
 			printf("\n");
 		else
 			printf(", ");
