@@ -1,6 +1,10 @@
 #include "main.h"
 
-/***/
+/**
+ * print_line - print a straight line
+ *
+ * @n: num of '_' printed
+*/
 
 void print_line(int n)
 {
