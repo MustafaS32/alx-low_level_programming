@@ -2,13 +2,12 @@
 
 /**
  * init_dog - dog init
- *
  * @d: the dog to initialize
  * @name: the dog's name
  * @age: the dog's age
  * @owner: the onwer's name
  *
- * Return: no return
+ * Return: void
 */
 
 void init_dog(struct dog *d, char *name, float age, char *owner)
