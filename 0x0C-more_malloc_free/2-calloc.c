@@ -1,15 +1,13 @@
 #include "main.h"
 
 /**
- * *_memset - fills memory with a constant byte.
- *
- * @s: pointer
- * @b: const
- * @n: max bytes to use
- *
- * Return: *s
+* _calloc - allocate memory using malloc and initialize it to zero
+*@nmemb: number of elements
+*@size: size of the memory block to be allocated
+*
+*Return: poiner to the address of the memory block
 */
-
+void *_calloc(unsigned int nmemb, unsigned int size)
 {
 	char *block;
 	unsigned int i;
@@ -26,12 +24,3 @@
 	else
 		return (NULL);
 }
-
-/**
- * *_calloc - allocate mamory for an array, using malloc
- *
- * @nmemb: array length
- * @size:size
- *
- * Return: pointer
-*/
