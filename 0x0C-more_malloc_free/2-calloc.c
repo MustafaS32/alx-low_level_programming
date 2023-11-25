@@ -10,13 +10,21 @@
  * Return: *s
 */
 
-char *_memset(char *s, char b, unsigned int n)
 {
-	char *ptr = s;
+	char *block;
+	unsigned int i;
 
-	while (n--)
-		*s++ = b;
-	return (ptr);
+	if (nmemb == 0 || size == 0)
+		return (NULL);
+	block = malloc(nmemb * size);
+	if (block != NULL)
+	{
+		for (i = 0; i < (nmemb * size); i++)
+			block[i] = 0;
+		return (block);
+	}
+	else
+		return (NULL);
 }
 
 /**
@@ -27,20 +35,3 @@ char *_memset(char *s, char b, unsigned int n)
  *
  * Return: pointer
 */
-
-
-void *_calloc(unsigned int nmemb, unsigned int size)
-{
-	void *i;
-
-	if (size == 0 || nmemb == 0)
-		return (NULL);
-	i = malloc(sizeof(int) * nmemb);
-
-	if (i == 0)
-		return (NULL);
-
-	_memset(i, 0, sizeof(int) * nmemb);
-
-	return (i);
-}
